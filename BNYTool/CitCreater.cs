@@ -53,6 +53,7 @@ namespace BNYTool
             try
             {
                 string strackName = file.Name.Split('_')[2];
+                strackName = strackName.Substring(0, strackName.IndexOf('.'));
                 string lineType=strackName.Substring(3,1);
                 if(lineType=="S")
                 {
